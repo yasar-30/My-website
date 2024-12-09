@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --sideBGColor: #040b14;
+    --themeColor: #00A78E;
+    --iconBGColor: #2C2F3F;
+    --textColor: #161414;
+    --BGColor: #f7f7f7;
+}
+
+header {
+    height: 100vh;
+    width: 300px;
+    padding: 15px 30px;
+    background-color: var(--sideBGColor);
+    overflow-y: auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    transition: 0.4s;
+    z-index: 99;
+}
+
+header .profile {
+    text-align: center;
+    margin: 10px 0;
+}
+header .profile img {
+    width: 150px;
+    border-radius: 50px;
+    border: 10px solid var(--iconBGColor);
+}
+
+header .profile h1 {
+    color: white;
+    font-weight: 600;
+}
+header .profile .social-icons a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 36px;
+    background-color: var(--iconBGColor);
+    color: white;
+    font-size: 18px;
+    margin: 1.5px;
+    transition: 0.4s;
+}
+
+header .profile .social-icons a:hover {
+    background-color: var(--themeColor);
+}
+
+header nav {
+    margin-top: 30px;
+}
+header nav ul li {
+    list-style: none;
+}
+header nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 10px;
+    margin: 7px 0;
+    color: lightgray;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.6px;
+}
+header nav ul li a i {
+    margin-right: 10px;
+    font-size: 20px;
+    transition: 0.4s;
+}
+header nav ul li a:hover i {
+    color: var(--themeColor);
+}
+header nav ul li a:active i {
+    color: var(--themeColor);
+}
+
+header .footer {
+    text-align: center;
+    background-color: var(--sideBGColor);
+    width: 300px;
+    color: var(--textColor);
+    font-size: 14px;
+    letter-spacing: 0.6px;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    transition: 0.4s;
+}
+header .footer p a {
+    color: var(--themeColor);
+}
+#MenuBtn {
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    width: 40px;
+    height: 40px;
+    color: white;
+    background-color: var(--textColor);
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    display: none;
+    z-index: 999;
+}
+
+@media only screen and (max-width: 1500px) {
+    header {
+        left: -300px;
+    }
+    header .footer {
+        left: -300px;
+    }
+    #MenuBtn {
+        display: block;
+    }
+}
+.mobile-nav-active header {
+    left: 0;
+}
+.mobile-nav-active header .footer {
+    left: 0;
+}
+main {
+    margin-left: 300px;
+    background-color: var(--BGColor);
+    transition: 0.3s;
+}
+@media only screen and (max-width: 1050px) {
+    main {
+        margin-left: 0;
+    }
+}
+
+#home {
+    height: 100vh;
+    width: 100%;
+    background-image: url(bike.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 70px;
+    position: relative;
+}
+#home::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.431);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#home .home-row h1 {
+    font-size: 60px;
+    color: white;
+    font-weight: 600;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+    line-height: 70px;
+}
+#home .home-row h1 span {
+    color: var(--textColor);
+}
+#home .home-row p {
+    color: whitesmoke;
+    font-size: 30px;
+    font-weight: 500;
+}
+#home .home-row p span {
+    border-bottom: 6px solid var(--themeColor);
+}
+@media only screen and (max-width: 670px) {
+    #home {
+        padding: 30px;
+    }
+    #home .home-row h1 {
+        font-size: 35px;
+        letter-spacing: 0px;
+        line-height: 70px;
+    }
+    #home .home-row h1 br {
+        display: none;
+    }
+    #home .home-row p {
+        color: whitesmoke;
+        font-size: 20px;
+        font-weight: 400;
+    }
+}
+

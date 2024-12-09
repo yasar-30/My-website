@@ -1,0 +1,186 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --sideBGColor: #040b14;
+    --themeColor: #00A78E;
+    --iconBGColor: #2C2F3F;
+    --textColor: #525252;
+    --BGColor: #f7f7f7;
+}
+
+header {
+    height: 100vh;
+    width: 300px;
+    padding: 15px 30px;
+    background-color: var(--sideBGColor);
+    overflow-y: auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    transition: 0.4s;
+    z-index: 99;
+}
+
+header .profile {
+    text-align: center;
+    margin: 10px 0;
+}
+header .profile img {
+    width: 150px;
+    border-radius: 50px;
+    border: 10px solid var(--iconBGColor);
+}
+
+header .profile h1 {
+    color: white;
+    font-weight: 600;
+}
+header .profile .social-icons a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 36px;
+    background-color: var(--iconBGColor);
+    color: white;
+    font-size: 18px;
+    margin: 1.5px;
+    transition: 0.4s;
+}
+
+header .profile .social-icons a:hover {
+    background-color: var(--themeColor);
+}
+
+header nav {
+    margin-top: 30px;
+}
+header nav ul li {
+    list-style: none;
+}
+header nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 10px;
+    margin: 7px 0;
+    color: lightgray;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.6px;
+}
+header nav ul li a i {
+    margin-right: 10px;
+    font-size: 20px;
+    transition: 0.4s;
+}
+header nav ul li a:hover i {
+    color: var(--themeColor);
+}
+header nav ul li a:active i {
+    color: var(--themeColor);
+}
+
+header .footer {
+    text-align: center;
+    background-color: var(--sideBGColor);
+    width: 300px;
+    color: var(--textColor);
+    font-size: 14px;
+    letter-spacing: 0.6px;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    transition: 0.4s;
+}
+header .footer p a {
+    color: var(--themeColor);
+}
+#MenuBtn {
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    width: 40px;
+    height: 40px;
+    color: white;
+    background-color: var(--textColor);
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 999;
+}
+
+@media only screen and (max-width: 1500px) {
+    header {
+        left: -300px;
+    }
+    header .footer {
+        left: -300px;
+    }
+    #MenuBtn {
+        display: block;
+    }
+}
+.mobile-nav-active header {
+    left: 0;
+}
+.mobile-nav-active header .footer {
+    left: 0;
+}
+main {
+    margin-left: 300px;
+    background-color: var(--BGColor);
+    transition: 0.3s;
+}
+@media only screen and (max-width: 1050px) {
+    main {
+        margin-left: 0;
+    }
+}
+
+#contact {
+    padding: 50px 20px;
+    background-color: var(--BGColor);
+}
+.sub-heading {
+    font-size: 28px;
+    text-align: center;
+    color: var(--themeColor);
+    margin-bottom: 20px;
+}
+.divider {
+    width: 100px;
+    height: 4px;
+    background-color: var(--themeColor);
+    margin: 0 auto 20px;
+}
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.contact-form label {
+    display: block;
+    font-size: 14px;
+    color: var(--textColor);
+    margin-bottom: 5px;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+[_{{{CITATION{{{_1{](https://github.com/fireun/Masomon-Online-Shopping/tree/6fa264f2c43c095aa821a7eafd80b8ca66a77afe/user%2FcancellationRequest.php)[_{{{CITATION{{{_2{](https://github.com/Rafid-Al-Ahsan97/Database-Management/tree/d006035e700746908f3ee72c7ba1902b863c2b3e/1722006_instructorv1.php)[_{{{CITATION{{{_3{](https://github.com/dhamith93/SWIFT/tree/dc78241b50816d5b2bd00802c11fa2d6f313cc65/application%2Fviews%2Fpublic%2Fcontacts.php)

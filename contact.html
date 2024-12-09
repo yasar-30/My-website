@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Site</title>
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+   <header>
+        <div class="profile">
+            <img src="car.jpg" alt="Profile Picture">
+            <h1>Yasar Imam Shaikh</h1>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/yasar.shaikh.946179?mibextid=ZbWKwL" class="active"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/traveling_techie_?igsh=ZnpldHA2bWNoa3Yx"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/yasar-imam-shaikh-85b387254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/yasar-30"><i class="fab fa-github"></i></a> <!-- Added GitHub icon -->
+                <a href="https://www.youtube.com/channel/UC05qMpfT-_r5ItME5b6wjPg"><i class="fab fa-youtube"></i></a> <!-- Added YouTube icon -->
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="aboutme.html"><i class="fas fa-user"></i> About Me</a></li>
+                <li><a href="travel.html"><i class="fas fa-map-marker-alt"></i> Travel</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer">
+            <p>&copy; 2024 Designed By Yasar</p>
+        </div>
+    </header>
+    <i class="fas fa-bars" id="MenuBtn"></i>
+
+    <main>
+        <section id="contact">
+            <h1 class="sub-heading">Contact Me</h1>
+            <div class="divider"></div>
+            <div class="contact-form">
+                <form action="#">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                    
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

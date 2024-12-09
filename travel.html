@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Site</title>
+    <link rel="stylesheet" href="travel.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <header>
+        <div class="profile">
+            <img src="car.jpg" alt="Profile Picture">
+            <h1>Yasar Imam Shaikh</h1>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/yasar.shaikh.946179?mibextid=ZbWKwL" class="active"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/traveling_techie_?igsh=ZnpldHA2bWNoa3Yx"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/yasar-imam-shaikh-85b387254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/yasar-30"><i class="fab fa-github"></i></a> <!-- Added GitHub icon -->
+                <a href="https://www.youtube.com/channel/UC05qMpfT-_r5ItME5b6wjPg"><i class="fab fa-youtube"></i></a> <!-- Added YouTube icon -->
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="aboutme.html"><i class="fas fa-user"></i> About Me</a></li>
+                <li><a href="travel.html"><i class="fas fa-map-marker-alt"></i> Travel</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer">
+            <p>&copy; 2024 Designed By Yasar</p>
+        </div>
+    </header>
+    <i class="fas fa-bars" id="MenuBtn"></i>
+
+    <script src="main.js"></script>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to My Travel Blog!</h2>
+            <p>Join me on my journey as I explore new destinations, savor local cuisines, and share my travel experiences with you. Let's embark on an adventure together!</p>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hi, I'm Yasar Imam Shaikh, a front-end developer, YouTuber, avid bike rider, and passionate traveler from Goa, India. Traveling is my ultimate passion, and I love sharing my experiences with others. Follow my journey as I explore the world one destination at a time.</p>
+            <img src="car.jpg" alt="Yasar Imam Shaikh" style="width: 400px;height:500px;" >
+        </section>
+
+        <section id="travel-stories">
+            <h2>Travel Stories</h2>
+            <article>
+                <h3>Exploring Kerala</h3>
+                <p>Kerala's one of the best experience must visit place cool and Natural environment with fresh air </p>
+                <img src="kerala.jpg" alt="Kerala Backwaters"style="width: 900px;height:500px;" >
+                <img src="teafield.jpg" alt="Kerala Backwaters"style="width: 900px;height:500px;" >
+            </article>
+            <article>
+                <h3>Kapu light house of Karnataka</h3>
+                <p> one of the beautiful place in karnataka with a beautiful light house and a wonderfull beach view on top of the light house</p>
+                <img src="kapulighthouse.jpg" alt="Karnataka Hills"style="width: 900px;height:500px;">
+                <img src="ship.jpg" alt="Karnataka Hills"style="width: 900px;height:500px;">
+            </article>
+        </section>
+
+        <section id="food-adventures">
+            <h2>Food Adventures</h2>
+            <article>
+                <h3>Savoring the Flavors</h3>
+                <p>South Indian cuisine is a delightful blend of flavors and aromas. From spicy curries to mouth-watering dosas, every meal is an adventure.</p>
+                <img src="seek.jpg" alt="South Indian Food" style="width: 400px;height:500px;" >
+                <img src="fatayar.jpg" alt="South Indian Food" style="width: 400px;height:500px;" >
+            </article>
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-container">
+                <img src="nandihill,jpg.jpg" alt="Travel Photo 1">
+                <img src="juice.jpg" alt="drinks">
+                <img src="burger.jpg" alt="food">
+                <img src="heartlake.jpg" alt="travel">
+                 
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>I'd love to hear from you! Whether you have questions, comments, or just want to say hi, feel free to reach out to me.</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+     
+</body>
+</html>
